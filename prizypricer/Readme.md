@@ -22,6 +22,7 @@ For api's testing
 
 2. Steps to build the application
 	-GO to MySql workbench , go to "Data Import/Restore", and import the sql dump that is provided in the folder.
+	There are 2 dumps , Dump20181011_windows.sql is for windows and other one is for mac.
 	-Open the project in STS/Eclipse and go to application.properties and set up the SQL configuration.
 		spring.datasource.url=jdbc:mysql://localhost:3306/prizy_pricer (change your sql port on which the server is set up)
 		spring.datasource.username  (sql username for the server)
