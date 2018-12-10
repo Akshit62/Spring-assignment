@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+
+ng2-smart-table{
+    margin-left: 250px;
+    display: block;
+}
+body{
+    margin: 0;
+    padding: 9px 15px;
+}
+table{
+    font-size: 15px;
+    text-align: center;
+}
+ng2-smart-table-pager{
+  display: inherit !important;
+}
+.ng2-smart-pagination-nav{
+  float: right;
+}
+.ng2-smart-actions-title-add{
+    text-align: center;
+  }
+  .ng2-smart-th{
+      text-align: center;
+  }
+  .app-jw-modal-body{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    border-radius: 15px; 
+  }
+  .app-jw-modal{
+      background-color: rgba(10, 10, 10, 0.57);
+     text-align: center;
+  }
+  
+  .ng2-smart-action {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .ng2-smart-action-delete-delete{
+    color: red !important;
+  }
+ 
+  .ng2-smart-action-add-add{
+    color: #fff !important;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+  }
+  .ng2-smart-action-add-cancel{
+    color: #fff !important;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+  .ng2-smart-action-add-create{
+    color: #fff !important;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+  .ng2-smart-action-edit-save{
+    color: #fff !important;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+  .ng2-smart-action-edit-cancel{
+    color: #fff !important;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+  /* .ng2-smart-filters{
+    display : none;
+  } */
+  .ng2-smart-actions .ng2-smart-title{
+    display: inline-block;
+    cursor: pointer;
+    color: #1e6bb8 !important;
+    text-align: center;
+    font-family: 'Glyphicons Halflings';
+    font-size: 15px;
+  }
+  .ng2-smart-actions .ng2-smart-title::before {
+    content: "\e081";
+    margin-right : 3px;
+    font-size: 12px !important;    
+  }
+  .ng2-smart-actions  {
+    text-align: center;
+  }
+
+  .closeButton{
+    float: right;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+  }

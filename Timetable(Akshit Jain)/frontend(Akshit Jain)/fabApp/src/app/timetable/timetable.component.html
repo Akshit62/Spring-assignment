@@ -1,0 +1,54 @@
+<div class="mainBody">
+  <div class="section">
+    <span>
+      <span class="heading" >Class</span>
+      <select name="class" [(ngModel)]="class" >
+        <option *ngFor="let item of allClasses" value="item.className" >{{item.className}}</option>
+      </select>
+    </span>
+    <span>
+      <span class="heading"  > Sections</span>
+      <select name="Sections" [(ngModel)]="section">
+        <option value="sections"></option>
+      </select>
+    </span>
+    <div>
+    <button class="btn btn-primary customButton" [disabled] = "class == '' && section == '' " >Create For Section</button>
+    <button class="btn btn-primary customButton" [disabled] = "class == '' && section == '' " >Update For Section</button>
+    <button class="btn btn-primary customButton" [disabled] = "class == '' && section == '' " >Delete For Section</button>
+  </div>
+  </div>
+
+
+
+  <div class="section"> 
+      <span>
+        <span class="heading" >Class</span>
+        <select name="class" [(ngModel)]="classOnly" >
+          <option *ngFor="let item of allClasses" value="item.className" >{{item.className}}</option>
+        </select>
+      </span>
+      <div>
+      <button class="btn btn-primary customButton" [disabled] = "classOnly == '' " >Create For Class</button>
+      <button class="btn btn-primary customButton" [disabled] = "classOnly == '' ">Update For Class</button>
+      <button class="btn btn-primary customButton" [disabled] = "classOnly == '' ">Delete For Class</button>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="section" >
+        <div>
+        <button class="btn btn-primary customButton" >Create For all Classes</button>
+        <button class="btn btn-primary customButton">Update For All Classes</button>
+        <button class="btn btn-primary customButton">Delete for add classes</button>
+      </div>
+      </div>
+
+
+
+
+
+</div>

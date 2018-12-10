@@ -1,0 +1,29 @@
+<h3 style="padding-left:250px" >click on semester Name to see holidays.</h3>
+<ng2-smart-table [settings]="settings" [source]="source" (userRowSelect) = "selectSemester($event)" ></ng2-smart-table>
+
+
+<app-jw-modal id="addNew">
+    <i class="glyphicon glyphicon-remove closeButton" (click) = "justClose('addNew')" ></i>
+    <form [formGroup]="formGroup" (ngSubmit)="createNew()" class="form-inline">
+        <div>
+        <label>semesterName:</label>
+        <input autocomplete="off" type="text" name="semesterName" formControlName='semesterName' class="form-control">
+        <span *ngIf="formGroup.controls['semesterName'].hasError('required')">*</span>
+      </div>
+      <div>
+        <label>startOfSem:</label>
+        <input autocomplete="off" type="text" name="startOfSem" formControlName='startOfSem' class="form-control" placeholder="YYYY-MM-DD">
+        <span *ngIf="formGroup.controls['startOfSem'].hasError('required')">*</span>
+      </div>
+      <div>
+        <label>isSaturdayWorking:</label>
+        <select name="isSaturdayWorking" formControlName='isSaturdayWorking' class="form-control">
+          <option value="1">true</option>
+          <option value="0">false</option>
+        </select>
+        <span *ngIf="formGroup.controls['isSaturdayWorking'].hasError('required')">*</span>
+      </div>
+      <button class="btn btn-default" type="submit" [disabled]="!formGroup.valid">Add</button>
+    </form>
+  </app-jw-modal>
+  

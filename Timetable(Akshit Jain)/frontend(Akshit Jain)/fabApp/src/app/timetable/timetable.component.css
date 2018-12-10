@@ -1,0 +1,16 @@
+.mainBody {
+    padding-left: 250px;
+}
+.heading {
+    font-size: 15px;
+    padding: 10px;
+}
+.customButton {
+    margin: 10px;
+}
+.section {
+    margin: 22px;
+}
+.customButton :disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,21 @@
+:host /deep/ th {
+  border: 1px solid;
+}
+:host /deep/ td {
+  border: 1px solid;
+}
+:host /deep/ a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+:host /deep/ table {
+margin-top: 27px;
+}
+
+.search{
+width : 25%;
+}
+app-jw-modal{
+display: none;
+}

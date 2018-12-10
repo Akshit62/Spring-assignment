@@ -1,0 +1,19 @@
+<!-- <input style="margin-left: 250px;" #search class="search form-control" type="text" placeholder="Search Area_code" (keyup)="onSearch(search.value)"> -->
+
+<ng2-smart-table [settings]="settings" [source]="source" (editConfirm)="editSearviceableArea($event)" (deleteConfirm)="deleteClass($event)" (userRowSelect) = "selectClass($event)"
+  ></ng2-smart-table>
+
+  <!-- <button class="btn btn-primary" style="float : right; right: 16%;
+  position: absolute;margin-top: 10px;" (click)="addNew('addNew')">Add New</button> -->
+
+<app-jw-modal id="addNew">
+    <i class="glyphicon glyphicon-remove closeButton" (click) = "justClose('addNew')" ></i>  
+  <form [formGroup]="form" (ngSubmit)="createNew()" class="form-inline">
+    <div>
+      <label>className:</label>
+      <input autocomplete="off" type="text" name="className" formControlName='className' class="form-control">
+      <span *ngIf="form.controls['className'].hasError('required')">*</span>
+    </div>
+    <button class="btn btn-default" type="submit" [disabled]="!form.valid">Add</button>
+  </form>
+</app-jw-modal>

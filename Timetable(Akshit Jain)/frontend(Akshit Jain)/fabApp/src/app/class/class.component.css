@@ -1,0 +1,70 @@
+/* :host {
+  font-size: 1rem;
+}
+:host * {
+  box-sizing: border-box;
+}
+:host button,
+:host input,
+:host optgroup,
+:host select,
+:host textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+:host table {
+  line-height: 1.5em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+:host table tr th {
+  font-weight: bold;
+}
+:host table tr section {
+  font-size: 0.75em;
+  font-weight: bold;
+}
+:host table tr td,
+:host table tr th {
+  font-size: 0.875em;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+:host a {
+  color: #1e6bb8;
+  text-decoration: none;
+}
+:host a:hover {
+  text-decoration: underline;
+}
+th {
+    border: 1px solid
+} */
+:host /deep/ th {
+    border: 1px solid;
+}
+:host /deep/ td {
+    border: 1px solid;
+}
+:host /deep/ a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+:host /deep/ table {
+  margin-top: 27px;
+}
+
+.search{
+  width : 25%;
+}
+app-jw-modal{
+  display: none;
+}

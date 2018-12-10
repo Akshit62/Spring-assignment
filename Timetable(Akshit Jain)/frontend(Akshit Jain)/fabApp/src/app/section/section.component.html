@@ -1,0 +1,15 @@
+<ng2-smart-table [settings]="settings" [source]="data" (editConfirm)="updateSection($event)" (deleteConfirm)="deleteSection($event)"></ng2-smart-table>
+<!-- <button class="btn btn-primary" style="float : right; right: 12%;
+position: absolute;margin-top: 10px;" (click)="addNew('addNew')">Add New</button> -->
+
+<app-jw-modal id="addNew">
+  <i class="glyphicon glyphicon-remove closeButton" (click) = "justClose('addNew')" ></i>
+  <form [formGroup]="form" (ngSubmit)="createNew()" class="form-inline">
+    <div>
+      <label>section Name:</label>
+      <input autocomplete="off" type="text" name="sectionName" formControlName='sectionName' class="form-control">
+      <span *ngIf="form.controls['sectionName'].hasError('required')">*</span>
+    </div>
+    <button class="btn btn-default" type="submit" [disabled]="!form.valid">Add</button>
+  </form>
+</app-jw-modal>

@@ -1,0 +1,4 @@
+<div id="mySidenav" class="sidenav">
+  <a *ngFor="let route of routes" routerLinkActive="active-link" routerLink={{route.path}} [ngStyle]="{'background-color':activeRoute === route.path ? 'rgba(189, 162, 162, 0.34)' : 'transparent' }">{{route.name}}</a>
+</div>
+<router-outlet  (activate)="changeOfRoutes()" ></router-outlet>

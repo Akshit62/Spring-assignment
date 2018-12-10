@@ -1,0 +1,18 @@
+:host /deep/ th {
+    border: 1px solid;
+}
+:host /deep/ td {
+    border: 1px solid;
+}
+:host /deep/ a {
+    margin-right: 10px;
+}
+:host /deep/ table {
+    margin-top: 27px;
+}
+ .form-control{
+     width : 50%;
+ }
+ app-jw-modal{
+    display: none;
+}
