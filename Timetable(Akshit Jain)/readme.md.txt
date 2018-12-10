@@ -1,0 +1,1 @@
+This project is made on Java springboot(backend) and Angular 6(frontend)
